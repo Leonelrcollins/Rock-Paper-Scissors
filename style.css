@@ -13,10 +13,11 @@
 }
 
 body {
-    background-color: var(--dark-shades);
+    background: linear-gradient(var(--dark-shades) 70%, #1b1b1b);
     color: var(--light-shades);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3em;
+    height: 100vh;
 }
 
 main {
@@ -25,7 +26,70 @@ main {
     align-items: center;
 }
 
+/* title */
+
 h1 {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+}
+
+.rock-span {
+    color: var(--dark-accent);
+}
+
+.paper-span {
+    color: var(--light-accent);
+}
+
+.scissors-span {
+    color: var(--main-brand-color);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    cursor: pointer;
+    height: 250px;
+}
+
+#rock:hover {
+    border: 5px solid var(--dark-accent);
+    border-radius: 10px;
+    padding: 1px 3px;
+}
+
+#paper:hover {
+    border: 5px solid var(--light-accent);
+    border-radius: 10px;
+    padding: 1px 3px;
+}
+
+#scissors:hover {
+    border: 5px solid var(--main-brand-color);
+    border-radius: 10px;
+    padding: 1px 3px;
+}
+
+.output {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    width: 600px;
+}
+
+.player-and-computer {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+#result {
+    font-size: 2em;
+    font-weight: bold;
 }
