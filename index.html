@@ -7,9 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        
-    </main> 
+    <main class="main">
+        <h1 class="title">ROCK - PAPER - SCISSORS</h1>
+        <div class="scoreboard">
+            <div class="output">
+                <h2 class="score-result" id="score-result">Win or Lose</h2>
+                <h3 class="score-msg" id="score-msg">First to score 3 points wins</h3>
+                <div class="score-container">
+                    <div class="score-box">
+                        <div class="sign" id="player-sign">😀</div>
+                        <p id="player-score">Player score: 0</p>
+                    </div>
+                    <div class="score-box">
+                        <div class="sign" id="computer-sign">🤖</div>
+                        <p id="computer-score">Computer score: 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons" id="choices">
+                <button class="btn sign" onclick="playRound('rock')">✊</button>
+                <button class="btn sign" onclick="playRound('paper')">✋</button>
+                <button class="btn sign" onclick="playRound('scissors')">✌</button>
+            </div>
+        </div>
+    </main>
     <script src="game-rps.js"></script>
 </body>
 </html>

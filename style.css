@@ -1,9 +1,9 @@
 :root {
-    --light-shades: #F0F0F0; /* GALLERY */
-    --light-accent: #57E3F5; /* MALIBU */
-    --main-brand-color: #DEEC7D; /* MANZ */
-    --dark-accent: #F086CE; /* LAVENDER MAGENTA */
-    --dark-shades: #292929; /* MINE SHAFT */
+    --light-shades: #F4F4F6; /* Athens Gray */
+    --light-accent: #8EACB2; /* Bali Hai */
+    --main-brand-color: #45ABBC; /* Pelorous */
+    --dark-accent: #747A74; /* Xanadu*/ 
+    --dark-shades: #2C3D5F; /* Rhino */
 }
 
 * {
@@ -13,16 +13,66 @@
 }
 
 body {
-    background: linear-gradient(var(--dark-shades) 70%, #1b1b1b);
+    background-color: var(--dark-shades);
     color: var(--light-shades);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.3em;
     height: 100vh;
 }
 
-main {
+.title {
+    padding: 10px;
+    text-align: center;
+}
+
+.scoreboard {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
+.output {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+}
+
+.sign {
+    font-size: 3em;
+}
+
+.score-container {
+    display: flex;
+    padding-top: 40px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.buttons {
+    background-color: var(--light-accent);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.btn {
+    margin: 0 20px;
+    height: 100px;
+    width: 100px;
+    background-color: var(--dark-accent);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--main-brand-color);
+    transition: 0.2s;
+}
