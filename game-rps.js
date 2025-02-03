@@ -70,8 +70,8 @@ const playRound = (playerChoice) => {
 }
 
 const GameOver = () => {
-  if (playerScore === 3 || computerScore === 3) {
-    if (playerScore === 3) {
+  if (playerScore === 5 || computerScore === 5) {
+    if (playerScore === 5) {
       alert("You win the game")
     } else {
       alert("You lose the game")
